@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="types.css">
+</head>
+<body>
+    <div class="esquerda-fundo">
+        <div class="esquerda">
+            <header>
+                <div class="camera">
+                <svg xmlns="http://www.w3.org/2000/svg" width="103" height="102" viewBox="0 0 103 102" fill="none">
+                    <path d="M102.179 51.2228C102.179 78.8334 79.5249 101.226 51.5666 101.226C23.6084 101.226 0.953979 78.8334 0.953979 51.2228C0.953979 23.6122 23.6084 1.21924 51.5666 1.21924C79.5249 1.21924 102.179 23.6122 102.179 51.2228Z" fill="#E3E3E3" stroke="black"/>
+                    <path d="M95.6263 51.2226C95.6263 75.2573 75.9057 94.7514 51.5666 94.7514C27.2274 94.7514 7.50684 75.2573 7.50684 51.2226C7.50684 27.188 27.2274 7.69385 51.5666 7.69385C75.9057 7.69385 95.6263 27.188 95.6263 51.2226Z" fill="#15AACD" stroke="black"/>
+                    <ellipse cx="37.5871" cy="35.6833" rx="21.843" ry="21.5827" fill="#E3E3E3"/>
+                  </svg>
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
+                        <ellipse cx="15.0035" cy="14.4746" rx="14.6348" ry="14.4604" fill="#A9060F"/>
+                        <ellipse cx="9.87038" cy="9.83422" rx="7.31741" ry="7.23022" fill="#BE0014"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
+                        <ellipse cx="14.6996" cy="14.4746" rx="14.6348" ry="14.4604" fill="#8E9938"/>
+                        <ellipse cx="9.56655" cy="9.83422" rx="7.31741" ry="7.23022" fill="#A9B646"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="31" height="29" viewBox="0 0 31 29" fill="none">
+                        <ellipse cx="15.3959" cy="14.4746" rx="14.6348" ry="14.4604" fill="#6AAA38"/>
+                        <ellipse cx="10.2628" cy="9.83422" rx="7.31741" ry="7.23022" fill="#77BE40"/>
+                      </svg>
+                  </div>
+                <img src="/partes/col.svg" alt="">
+            </header>
+            
+            <article class="conteudo-esquerda">
+                <div class="tela-moldura">
+                    <div class="tela">
+                        <div class="conteudo-pokemon">
+                            <img id="pokemon-imagem" src="" alt="">
+                            <div class="informacoes">
+                                <div class="card-nome">
+                                    <div class="card-nome-header">
+                                    <h6 id="poke-id"></h6>
+                                    </div>
+                                    <h6 id="nome-pokemon"></h6>
+                                </div>
+                                <div class="pokemon-tipos">
+                                    <ul id="pokemon-tipos-lista" class="pokemon-tipos-lista"> 
+                                    </ul>
+                                </div>
+                                <div class="card-info">
+                                    <div class="corpo">
+                                        <h6 id="poke-altura"></h6>
+                                        <h6 id="poke-peso"></h6>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="desc-pokemon">
+                            <div class="conteudo">
+                                <p id="descricao"></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>            
+        </div>
+
+    </div>
+
+</body>
+<script src="index.js"></script>
+</html>
