@@ -4,7 +4,7 @@ fetch('https://pokeapi.co/api/v2/pokemon/' + id)
         return response.json()
     }).then(function (data) {
         
-        let imagemSrc = data.sprites.front_default
+        let imagemSrc = data.sprites.other["official-artwork"].front_default
         if (imagemSrc == null)
             imagemSrc = data.sprites.front_default
 
@@ -23,12 +23,13 @@ fetch('https://pokeapi.co/api/v2/pokemon/' + id)
 
         let status = ""
         for (const texto of  data.stats) {
+            
             status += 
             `<li>
             <p>${texto.stat.name.replace("special-","sp.").replace("attack","atk.").replace("defense","def.")}</p>
             <P>${texto.base_stat}</P>
             <div class="barra">
-                <div class="barra-valor" style="width:${texto.base_stat}px"></div>
+                <div class="barra-valor" style="width:${texto.base_stat > 115 ? 115 : texto.base_stat}px"></div>
             </div>
             </li>`
         }

@@ -90,6 +90,17 @@ body {
     display: flex;
     height: 150px;
 }
+@keyframes mexer {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+#pokemon-imagem{
+    animation: mexer 6s infinite;
+}
 
 .card-nome-header {
     height: 50%;
@@ -223,11 +234,11 @@ body {
 .barra {
     background-color: var(--branco);
     border: solid black 0.5px;
-    width: 120px;
+    width: 115px;
     height: 13px;
 }
 
 .barra-valor {
-    background-color: #D30A40;
+    background-color: var(--vermelho-primario);
     height: 11px;
 }
