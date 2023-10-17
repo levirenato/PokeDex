@@ -5,6 +5,7 @@
     --cinza:#313131;
     --font-primaria:"Press Start 2P";
 }
+body{display: flex;align-items: center;justify-content: center;}
 *{box-sizing: border-box;border-radius: 15px;padding: 0;margin: 0; font-family: var(--font-primaria);}
 
 .esquerda-fundo{
@@ -60,7 +61,7 @@
 .tela{
     width: 341.731px;
     height: 212.628px;
-    background-color: aqua;
+    background-image: url("./partes/green_display.png");
     margin-bottom: 20px;
     padding: 5px;
     color: var(--cinza);
@@ -145,4 +146,47 @@
     display: flex;justify-content: center;align-items: center;
     border-radius: 5px; box-shadow: -4px 8px 5px 0px rgba(0, 0, 0, 0.25);
     
+}
+
+.bt-ok{
+    width: 60px;height: 60px;
+}
+.tela-skills{
+    width: 240px;height: 115px;padding: 2px;
+    background:url("./partes/green_display.png");
+}
+.linha-2{display: flex;}
+.analogico{
+    background-image: url("./partes/arrow_bt.svg");
+    margin-left: 30px;
+    width: 116px;height: 120px;
+}
+
+.skill-lista{
+
+    background: rgba(217, 217, 217, 0.75);
+    height: 105px;
+    padding: 4px;
+    
+}
+.tela-skills{padding-top: 5px;}
+.tela-skills ul li{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    font-size: 10px;
+    margin: 2px;
+}
+.tela-skills ul li p{width: 56px;}
+.tela-skills ul li p:nth-child(2){text-align: center}
+.barra{
+    background-color: var(--branco);
+    border: solid black 0.5px;
+    width: 120px;
+    height: 13px;
+    
+}
+.barra-valor{
+    background-color: #D30A40;
+    height: 11px;
 }
